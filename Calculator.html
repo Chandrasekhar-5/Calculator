@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realme Style Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel = "stylesheet" href = "Calculator.css">
+</head>
+<body>
+  <div class="calculator normal" id="calc">
+    <div class="more">
+      <button class="magic-btn" id="transformBtn">
+        <span id="sym1">√</span>
+        <span id="sym2">π</span>
+        <span id="sym3">e</span>
+        <span id="sym4">=</span>
+      </button>
+      <button class="rs-drawer"></button>
+      <button class="options" id="optionsBtn"></button>
+    </div>
+
+    <div class="dropDown" id="dropDown">
+      <p>History</p>
+      <hr style="border: none; height: 1px; background-color: #5c5c5c;">
+      <p>Settings</p>
+    </div>
+
+    <div class="display" id="display">0</div>
+
+    <div class="keypad-wrapper">
+      <div class="keypad">
+        <button>sin</button>
+        <button>cos</button>
+        <button>tan</button>
+        <button>rad</button>
+        <button>deg</button>
+        <button>log</button>
+        <button>ln</button>
+        <button>(</button>
+        <button>)</button>
+        <button>inv</button>
+        <button>!</button>
+        <button class="diff">AC</button>
+        <button class="diff">%</button>
+        <button class="diff">⌫</button>
+        <button class="diff">÷</button>
+        <button>^</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="diff">×</button>
+        <button>√</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="diff">−</button>
+        <button>e</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="diff">+</button>
+        <button>π</button>
+        <button>00</button>
+        <button>0</button>
+        <button>.</button>
+        <button class="equal">=</button>
+      </div>
+    </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <button class="close-drawer" onclick = "closeDrawer()" aria-label="Close drawer">
+        <svg viewBox="0 0 24 24" width="36" height="36"><path d="M15 18L9 12l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <h2 style="color: #e6e6e6;">Unit converter</h2>
+    </div>
+    <div class="options-grid">
+      <div class="option" onclick = "openDrawer('currency')"><i class="fas fa-coins"></i><span>Currency</span></div>
+      <div class="option" onclick = "openDrawer('length')"><i class="fas fa-ruler"></i><span>Length</span></div>
+      <div class="option" onclick = "openDrawer('area')"><i class="fas fa-draw-polygon"></i><span>Area</span></div>
+      <div class="option" onclick = "openDrawer('volume')"><i class="fas fa-cube"></i><span>Volume</span></div>
+      <div class="option" onclick = "openDrawer('weight')"><i class="fas fa-balance-scale"></i><span>Weight</span></div>
+      <div class="option" onclick = "openDrawer('temperature')"><i class="fas fa-thermometer-half"></i><span>Temperature</span></div>
+      <div class="option" onclick = "openDrawer('speed')"><i class="fas fa-tachometer-alt"></i><span>Speed</span></div>
+      <div class="option" onclick = "openDrawer('pressure')"><i class="fas fa-compress-arrows-alt"></i><span>Pressure</span></div>
+      <div class="option" onclick = "openDrawer('power')"><i class="fas fa-bolt"></i><span>Power</span></div>
+      <div class="option" onclick = "openDrawer('numbersystem')"><i class="fas fa-calculator"></i><span>Number System</span></div>
+    </div>
+    <div class="opDrawer" id = "opDrawer">
+      <div class = "opHeader">
+        <button class="close-drawer" onclick = "closeDrawer()" aria-label="Close drawer">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M15 18L9 12l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class = "opTitle" id = "opTitle"></div>
+      </div>
+        <div class ="display-container">
+           <div class = "display-box">
+             <select id = "from-unit"></select>
+             <strong id = "from-value">1</strong>
+           </div>
+           <div class = "display-box">
+             <select id = "to-unit"></select>
+             <strong id = "to-value">0</strong>
+           </div>
+        </div>
+        <div class = "key-pad" id = "key-pad">
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <script src = "Calculator.js"></script>
+</body>
+</html>
