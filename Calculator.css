@@ -148,7 +148,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: none;
+      cursor: pointer;
       transition: background 0.2s, transform 0.1s;
     }
     .keypad button:active { background: #444; transform: scale(0.9); }
@@ -330,7 +330,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: none;
+      cursor: pointer;
       transition: 0.2s;
   }
   .btn:active{
