@@ -6,46 +6,69 @@ This project focuses on UI/UX polish, clean logic, and real-world utility, witho
 
 The calculator supports:
 
-Basic arithmetic
+• Basic arithmetic
 
-Scientific functions
+• Scientific functions
 
-Angle modes (Radians/Degrees)
+• Angle modes (Radians/Degrees)
 
-Mathematical constants
+• Mathematical constants
 
-Factorials and powers
+• Factorials and powers
 
 In addition, it includes a slide-in unit converter drawer that allows users to convert values across multiple domains such as length, weight, area, volume, temperature, speed, pressure, power, number systems, and currency.
 
 ### Key Features
-Basic operations: + − × ÷ %
-Scientific functions:
-sin, cos, tan
-log, ln
-√, factorial !, inverse
-Power operator ^
-Constants: π, e
-Bracket support ( )
-Radians / Degrees toggle
-Animated function preview before calculation
-Smart input handling & error prevention
+• Basic operations: + − × ÷ %
+
+• Scientific functions:
+
+        • sin, cos, tan
+    
+        • log, ln
+    
+        • √, factorial !, inverse
+    
+        • Power operator ^
+    
+        • Constants: π, e
+
+• Bracket support ( )
+
+• Radians / Degrees toggle
+
+• Animated function preview before calculation
+
+• Smart input handling & error prevention
 
 ### Unit Converter Drawer
-Slide-in drawer UI
-Categories supported:
-    Length
-    Area
-    Volume
-    Weight
-    Temperature
-    Speed
-    Pressure
-    Power
-    Number System
-    Currency
-Dedicated numeric keypad per conversion
-Real-time conversion updates
+• Slide-in drawer UI
+
+• Categories supported:
+
+        • Length
+    
+        • Area
+    
+        • Volume
+    
+        • Weight
+    
+        • Temperature
+        
+        • Speed
+    
+        • Pressure
+    
+        • Power
+    
+        • Number System
+
+        • Currency
+    
+• Dedicated numeric keypad per conversion
+
+• Real-time conversion updates
 
 ### Project Structure
 ├── index.html     
@@ -53,18 +76,33 @@ Real-time conversion updates
 └── script.js 
 
 ### Technologies Used
-Frontend
-HTML5
-    Semantic structure
-    Drawer & keypad layout
-CSS3
-    Flexbox & Grid
-    Transitions & animations
-    Dark UI theme
-    Responsive design
-JavaScript (Vanilla)
-    Calculator logic
-    Scientific computations
-    Unit conversion engine
-    Drawer state management
-    API integration (fetch)
+
+• Frontend
+
+    • HTML5
+    
+        • Semantic structure
+        
+        • Drawer & keypad layout
+        
+    • CSS3
+    
+        • Flexbox & Grid
+        
+        • Transitions & animations
+        
+        • Dark UI theme
+        
+        • Responsive design
+        
+    • JavaScript (Vanilla)
+    
+        • Calculator logic
+        
+        • Scientific computations
+        
+        • Unit conversion engine
+        
+        • Drawer state management
+        
+        • API integration (fetch)
